@@ -105,14 +105,3 @@ export class BooksPage implements OnInit {
     );
   }
 }
-
-// Intefacing is Optional
-
-interface Books {
-  name: string;
-  ibn: string;
-  _id?: string;
-  image_url: string;
-  author: string;
-  is_deleted: boolean;
-}
