@@ -24,7 +24,7 @@ export class AppComponent {
     {
       title: "Register",
       url: "/login",
-      icon: "user"
+      icon: "plus"
     },
     {
       title: "settings",
