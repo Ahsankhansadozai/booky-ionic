@@ -31,6 +31,10 @@ const routes: Routes = [
     canActivate: [IsLoginGuard],
     loadChildren: () =>
       import('./books/books.module').then(m => m.BooksPageModule)
+  },
+  {
+    path: 'settings',
+    loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
   }
 ];
 
