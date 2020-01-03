@@ -23,7 +23,7 @@ export class BooksPage implements OnInit {
     private modalController: ModalController,
     private alertController: AlertController,
     private authService: AuthService
-  ) {}
+  ) { }
 
   async ngOnInit() {
     this.getAll();
@@ -104,4 +104,15 @@ export class BooksPage implements OnInit {
       }
     );
   }
+}
+
+// Intefacing is Optional
+
+interface Books {
+  name: string;
+  ibn: string;
+  _id?: string;
+  image_url: string;
+  author: string;
+  is_deleted: boolean;
 }
